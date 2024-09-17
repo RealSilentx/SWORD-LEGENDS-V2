@@ -161,7 +161,7 @@ local function runFarming()
         -- DefaultFarm logic
         for _, tool in ipairs(game.Players.LocalPlayer.Backpack:GetChildren()) do
             if tool:IsA("Tool") and tool:FindFirstChild("Handle") and tool.Handle:FindFirstChild("Script") and tool.Handle.Script:FindFirstChild("RemoteEvent") then
-                for i = 1, 2 do
+                for i = 1, 1 do
                     tool.Handle.Script.RemoteEvent:FireServer()
                 end
             end
@@ -171,7 +171,7 @@ local function runFarming()
         if character and character:FindFirstChildOfClass("Tool") then
             local tool = character:FindFirstChildOfClass("Tool")
             if tool:FindFirstChild("Handle") and tool.Handle:FindFirstChild("Script") and tool.Handle.Script:FindFirstChild("RemoteEvent") then
-                for i = 1, 5 do
+                for i = 1, 1 do
                     tool.Handle.Script.RemoteEvent:FireServer()
                 end
             end
